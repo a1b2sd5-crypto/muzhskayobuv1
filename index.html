@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мужская обувь — Заказ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0d0d0d;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 25px 15px;
+            background: #000;
+            border-bottom: 1px solid #222;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+
+        header p {
+            margin-top: 8px;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 25px auto;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 260px;
+            background: #151515;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 0 0 1px #222;
+        }
+
+        .image-box {
+            height: 260px;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-box img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .buttons {
+            display: flex;
+        }
+
+        .btn {
+            flex: 1;
+            text-align: center;
+            padding: 12px 0;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .tg {
+            background: #229ED9;
+            color: #fff;
+        }
+
+        .wa {
+            background: #25D366;
+            color: #000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 14px;
+            color: #777;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Мужская обувь</h1>
+    <p>Нажмите для заказа в Telegram или WhatsApp</p>
+</header>
+
+<div class="container">
+
+<!-- 🔽 40 ФОТО 🔽 -->
+<!-- ФОРМАТ: shoes1.jpg ... shoes40.jpg -->
+
+<!-- Я ОСТАВЛЯЮ 1 БЛОК, ОН ПОВТОРЁН 40 РАЗ -->
+<!-- НИЖЕ УЖЕ ВСЕ 40 -->
+
+<!-- 1–40 -->
+<script>
+    for (let i = 1; i <= 40; i++) {
+        document.write(`
+        <div class="card">
+            <div class="image-box">
+                <img src="images/shoes${i}.jpg" alt="Обувь ${i}">
+            </div>
+            <div class="buttons">
+                <a class="btn tg" href="https://t.me/muzhskayobuv">Telegram</a>
+                <a class="btn wa" href="https://wa.me/79990000000">WhatsApp</a>
+            </div>
+        </div>
+        `);
+    }
+</script>
+
+</div>
+
+<footer>
+    Заказы принимаются через Telegram и WhatsApp
+</footer>
+
+</body>
+</html>
